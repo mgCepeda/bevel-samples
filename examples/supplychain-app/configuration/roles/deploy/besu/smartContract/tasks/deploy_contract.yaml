@@ -19,7 +19,7 @@
     privateFor: "{{ local_private_for }}"
     numberOfIteration: "{{ smart_contract.iterations }}"
   register: address
-  retries: "{{ network.env.retry_count}}"
+  retries: 10
   delay: 5
   until: address['stdout_lines'][address_line] is defined and address['stdout_lines'][0] != "Error"
 
