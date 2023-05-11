@@ -29,20 +29,6 @@
   when:
   - remove_org is undefined or not remove_org
 
-- debug:
-    var: release_dir
-
-
-- debug:
-    var: release_ns_dir
-
-
-- debug:
-    var: flux_mainfest_dir
-
-- pause:
-    minutes: 840
-
 # Git Push : Pushes the above generated files to git directory
 - name: Git Push
   include_role:
