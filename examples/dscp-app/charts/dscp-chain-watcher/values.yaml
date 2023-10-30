@@ -1,0 +1,36 @@
+fullnameOverride:
+
+metadata:
+  namespace:
+  storageClass: 
+
+config:
+  dbHost:
+  dbPort:
+  dbUsername: 
+  dbPassword: 
+  dbName: 
+  dscpApiHost:
+  dscpApiPort: 
+  idServiceHost:
+  idServicePort:
+  inteliApiHost:
+  inteliApiPort:
+  inteliApiAudience:
+  inteliApiGrant:
+  inteliApiTokenAddr:
+  fetchGcpKey:
+
+image:
+  repository: ghcr.io/inteli-poc/dscp-chain-watcher
+  pullPolicy: IfNotPresent
+  tag: 'latest'
+  pullSecrets: 
+
+vault:
+  alpineutils:
+  address:
+  secretprefix:
+  serviceaccountname:
+  role:
+  authpath:
